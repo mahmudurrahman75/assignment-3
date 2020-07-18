@@ -53,22 +53,22 @@ console.log(small);
 // brickCalculator
 
 function brickCalculator(floor){
-var feet=1000;
-var step1;
-var step2;
-var step3;
-if(floor<=10){
-    var step1=feet*15*floor;
-    return step1;
-}
-else if(floor>=11 && floor <=20){
-    var step2=feet*12*floor;
-    return step1+step2;
-}
-else (floor>=21){
-    var step3=feet*10*floor;
-    return step1+step2+step3;
-}
+    var feet=1000;
+    var step1;
+    var step2;
+    var step3;
+    if(floor<=10){
+        var step1=feet*15*floor;
+        return step1;
+    }
+    else if(floor>=11 && floor <=20){
+        var step2=feet*12*floor;
+        return step1+step2;
+    }
+    else (floor>=21){
+        var step3=feet*10*floor;
+        return step1+step2+step3;
+    }
 }
 var result=brickCalculator(15);
 console.log(result);
